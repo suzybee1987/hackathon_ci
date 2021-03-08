@@ -39,6 +39,7 @@ This Project is an Team Event Project organized by [Code Institute](https://www.
     - [**INDEX.HTML**](#indexhtml)
     - [**GAME.HTML**](#gamehtml)
   - [**Construction Table**](#construction-table)
+- [**Development Lifecycle and Task Allocation**](#development-lifecycle-and-task-allocation)
 - [**Project Management**](#project-management)
 - [**Version Control**](#version-control)
     - [**Gitpod Workspaces**](#gitpod-workspaces)
@@ -56,7 +57,6 @@ This Project is an Team Event Project organized by [Code Institute](https://www.
   - [**Colour**](#colour)
   - [**Inspiration**](#inspiration)
   - [**Acknowledgements**](#acknowledgements)
-- [​](#)
 ​
 
 ---
@@ -87,15 +87,16 @@ We achieved this by:
 
 ​
 ### **User Stories** ###
-​- As a **user**, I want the home screen to be simple with a clear indication of what I can do and to be able to navigate it easily.
+
+- As a **user**, I want the home screen to be simple with a clear indication of what I can do and to be able to navigate it easily.
 - As a **user**, I want to play the game so I can compete against my friends and win the game.
 - As a **user**, I want to see the button to Start the game and would like to see the answers as I select them and see the score increase as I progress through the game.
 - As a **user**, I would like the game to have an Irish theme.
 - As a **user**, I want to see social media links in the footer.
 - As a **user**, I want to see my score at the end of the quiz.
 - As a **user**, I want to know more about St Patrick, so that i have a better knowledge about it.
-- As a **user** I want to see my progress, how many questions are left and how many i already answered.
-- As a **user** I want to give an answer and have feedback whether it is correct or not.
+- As a **user**, I want to see my progress, how many questions are left and how many i already answered.
+- As a **user**, I want to give an answer and have feedback whether it is correct or not.
 ​
 ### **Site Owner Goals** ###
 ​
@@ -268,6 +269,9 @@ paint. net was used to create the wireframes during the design process.
     - The Quit Game and New Game buttons
     ![game-body](assets/images/screenshots/game-body.png)
 
+    - The quiz answer buttons show the correct answer to the user
+      ![quiz-buttons](assets/images/screenshots/quiz-answer-buttons.png)
+
 ​
 ### **Construction Table** ###
 ​
@@ -275,46 +279,67 @@ paint. net was used to create the wireframes during the design process.
 | Site Page | Page Section | JavaScript File |
 | :---: | --- | :---: |
 | game.html | Answer Buttons | script.js |
-| game.html | questions | script.js |
+| game.html | Questions | script.js |
 | game.html | Pot of Gold score counter | script.js |
 ​
+
 ​
 ​[Back to contents](#contents)
 
 ---
+## **Development Lifecycle and Task Allocation** ##
+
+- The Team is made up of all experience levels from those who have only just started the course, right up to Alumni.
+  - Our first task was to figure out at which level everyone is and how much time each of us has.
+- Our team is Suzy, Tobi, Laith, Nicola, Simon and Marina
+- We split all the tasks between us based on our individual experience levels:
+  - Suzy came up with this great quiz idea and wrote all the questions.
+    - She created a huge part of the README including the User Stories
+    - She also worked really well with Nicola, Tobi and Laith on the coding.
+  - Marina worked on the website layout ideas
+    - She created the wireframe, the design and game styling and took care of finding all the content images.
+  - Simon helped us to get it set our team project on GitHub.
+    - He provided us with everything what we need for our dashboard
+    - Explained how to work with Forked repositories, and helped us patiently when we had trouble with fetching and merging branches as well as other queries and troubles.
+      - We would be lost without him, or at least we wouldn't have made it so fast!
+  - Tobi was behind creating the interactive game functionality in JavaScript and managed to solve the JSON file import (which was just awesome).
+  - Laith and Nicola worked on creating the main website and supported Tobi with the JavaScript; linking it all together.
+    - A big thank you to Nicola who hosted the master branch on his GitHub account and had all the work to do with the pull requests and merging as well as having to fix all the inevitable merge conflicts.
+  - Simon and Nicola did all the unit testing and bug reporting.
+- We had a fantastic team spirit and wish you could all see the slack channel conversations and collaboration!
+  - We kept each other permanently up to date.
+  - Helped each other where we could and what each was able to help with.
+  - Every single one of us gave 100% and more to make sure that this website will be: 
+    - Easy to understand and simple to use.
+    - A lot of fun to play.
+
+
+[Back to contents](#contents)
+
+---
 ## **Project Management** ##
 ​
-GitHub [Projects](project GitHub repo URL/projects) are used to organize the planning and development of the website.
+GitHub [Projects](https://github.com/NicolaLampis/hackathon_ci/projects/) are used to organize the planning and development of the website.
 Three GitHub projects are used to manage different aspects of the site development:
-- [Development](project GitHub repo URL/projects/1)
-  - Manages general project tasks and files including Documentation, HTML & CSS
-- [Bug Fixes](project GitHub repo URL/projects)
-  - Manages the triage and prioritization of the bug fixes.
+- [Steal the gold](https://github.com/NicolaLampis/hackathon_ci/projects/1)
+  - Manages all project tasks and files including Documentation, HTML, CSS & JavaScript.
 ​
 The Projects are created using the following GitHub templates:
-- `Automated kanban` template for the **Development** and **Development - JavaScript** projects 
-- `Bug Triage` template for the **Bug Fixes** project.
+- `Automated kanban` template for the **Steal the gold** project
 ​
 The following kanban project cards are used to manage the tasks:
-- **Backlog** - this card is used to capture ideas for project tasks.
-- **To Do** - this is the current work queue for the project.
-- **In Progress** - this is the list of tasks currently in work.
+- **Start** - this card is used to capture ideas for project tasks.
     - New issues and pull requests are automatically added to this column using project card automation options.
-- **Testing** - Testing tasks list
-- **Done** - completed tasks
+- **In Work** - this is the list of tasks currently in work.
+- **Finished Tasks** - completed tasks
 ​
-The following Bug Triage template project cards are used to manage the Bux fixes tasks:
-- **Needs Triage** - this card is used to capture new bugs prior to assigning a priority.
-  - A triage card is more appropriate for larger projects than this but left in as this is where all new issues are assigned when linking a project to a new issue.
-- **High Priority** - this is the high priority queue for the project.
-- **Low Priority** - this is the low priority queue for the project.
-- **Closed** - completed tasks.
 ​
 Markdown syntax is used to create **"To-Do" list** style checkboxes by adding `- [ ]` for an un-ticked checkbox and `- [x]` for a ticked checkbox on cards as a way of splitting a single complex task into a list of steps to be completed.
 ​
-![GitHub Projects - Development](assets/images/github-projects-development.png)
-![GitHub Projects - Bug Fixes](assets/images/github-projects-bugfixes.png)
+
+![GitHub Projects - Development](assets/images/screenshots/github-projects.png)
 ​
+
 [Back to contents](#contents)
 
 ---
@@ -389,6 +414,7 @@ git push
 ​
 - Testing information can be found in a separate [TESTING.md](TESTING.md) file.
 ​
+
 [Back to contents](#contents)
 
 ---
@@ -404,6 +430,7 @@ Each branch is then **merged** into the **master branch** using a **pull request
 ​
 Fixed bugs and issues are marked as [closed](https://github.com/NicolaLampis/hackathon_ci/issues?q=is%3Aissue+is%3Aclosed).
 ​
+
 [Back to contents](#contents)
 
 ---
@@ -473,13 +500,11 @@ The following websites were used as the starting point and inspiration for creat
 - [Smashing Magazine](https://www.smashingmagazine.com/2010/10/local-storage-and-how-to-use-it/) Guide on Local Storage
 - [GitHub](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/creating-a-custom-404-page-for-your-github-pages-site) Help guide on using Error 404 pages on repositories.
 - [Stack Overflow](https://stackoverflow.com/) For help fixing so many thing that fell over on this project!
-  - [Stack Overflow](Stack Overflow URL) for ideas and help with ...
 - [Bootstrap](https://getbootstrap.com/)
-  - [Modal](https://getbootstrap.com/docs/4.5/components/modal/) example code was copied and adapted for the Help Page.
-  - [Form Groups](https://getbootstrap.com/docs/4.5/components/forms/) example code was copied and adapted for the alarm clock settings.
-  - [Accordion](https://getbootstrap.com/docs/4.0/components/collapse/) example code was copied and adapted for the alarm clock settings.
-  
-​The team thanks [Sue](https://github.com/SPH73) for her support, encoraging us along the way
+
+
+**​The team thanks [Sue](https://github.com/SPH73) for her support, encouraging us along the way**
+
 --- 
 ​
 ​

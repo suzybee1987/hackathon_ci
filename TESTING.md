@@ -15,9 +15,13 @@
   - [**Table of Contents**](#table-of-contents)
   - [**Automated Testing**](#automated-testing)
     - [**Validation Services**](#validation-services)
+    - [HTML vlaidation](#html-vlaidation)
+      - [index.html](#indexhtml)
+      - [game.html](#gamehtml)
+    - [CSS vladation](#css-vladation)
+      - [style.css](#stylecss)
   - [**Manual Testing**](#manual-testing)
     - [**Unit Testing**](#unit-testing)
-    - [**User Acceptance Testing (UAT)**](#user-acceptance-testing-uat)
     - [**Peer Code Review**](#peer-code-review)
     - [**Testing undertaken on desktop**](#testing-undertaken-on-desktop)
     - [**Testing undertaken on tablet and phone devices**](#testing-undertaken-on-tablet-and-phone-devices)
@@ -55,32 +59,39 @@ The following **validation services** and **linters** were used to check the val
             Add a media description provide a brief summary of a web page and help the search engine.
         - Best Practice 100%
 
+
+### HTML vlaidation 
+
+#### index.html
+
+- ![validation/screnshot/HTML/index](/validation/index_html.png)
+#### game.html
+
+- ![validation/screnshot/HTML/game](/validation/game_html.png)
+
+### CSS vladation 
+#### style.css
+- ![validation/screnshot/CSS](/validation/style_css.png)
+
+
   - **Desktop Performance Report**
     
-    [Google Lighthouse - First Report Desktop](assets/images/s-one.png)
+    [Google Lighthouse - First Report Desktop](assets/images/screenshots/s-one.png)
     
-    ![Google Lighthouse - Improvement on Desktop](assets/images/s-two.png)
+    ![Google Lighthouse - Improvement on Desktop](assets/images/screenshots/s-two.png)
 
   - **Mobile Performance Report**
 
-    ![Google Lighthouse - Mobile](assets/images/s-mobile.png)
+    ![Google Lighthouse - Mobile](assets/images/screenshots/s-mobile.png)
 
 
 - [JSHint (version 2.12.0)](https://jshint.com/)
-  - JSHint is a community-driven tool that detects errors and potential problems in JavaScript code.
-  - The following option were selected to prevent  errors and warning being returned owing to the strict nature of the checking:
+  - JSHint is a community-driven tool that detects errors and potential problems in JavaScript code.  
 
-    ![JSLint Options](assets/img/testing-jshint-options.png)
-
-  - clock.js and alarm.js testing using JSHint passed the linter test successfully with the following selected additional option:
+  - script.js testing using JSHint passed the test successfully with the following selected additional option:
+    - jQuery
     - New JavaScript features (ES6)
-      - This was selected as both scripts use ECMAScript 6 features such as `const`
-
-
-  - **style.js results**
-  
-    ![JSLint Options](assets/img/testing-jshint-results-alarm.png)
-
+      - Scripts use ECMAScript 6 features such as `const`
 
 ---
 
@@ -88,19 +99,10 @@ The following **validation services** and **linters** were used to check the val
 ## **Manual Testing** ##
 
 ### **Unit Testing** ###
-[Unit Testing document](testing/unit-test-plan.pdf) containing:
+[Unit Testing document](testing/game-unit-test-plan.pdf) containing:
 - Unit Test scope,
 - The test cases,
 - The pass / fail record for each test case.
-
-
-### **User Acceptance Testing (UAT)** ###
-[UAT document](testing/uat-test-plan.pdf) containing:
-- UAT approach (scope, assumptions and constraints, team roles and responsibilities etc.), 
-- Identified risks, 
-- The test cases,
-- The pass / fail record for each test case.
-
 
 ### **Peer Code Review** ###
 The deployed website link was subjected to peer code review and testing:
@@ -150,16 +152,7 @@ The issue log is managed on the [GitHub Project Issues section](https://github.c
 
 #### **Known Bugs** ####
 
-[Issue #xx:](<issue-URL>)
-- **Bug Report Title**
-  - .
-
-[Issue #xx:](<issue-URL>)
-- **Bug Report Title**
-  - .
 
 #### **Unsolved Issues** ####
 
-[Issue #xx:](<issue-URL>)
-- **Bug Report Title**
-  - .
+
